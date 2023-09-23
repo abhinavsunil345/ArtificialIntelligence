@@ -140,7 +140,7 @@ class OffensiveReflexAgent(CaptureAgent):
         distancefriend = features.get('friendDistance', 0)
         succScore = features.get('successorScore', 0)
         oscil = features.get('oscilate', 0)
-        stateEval = 152 * succScore + -9 * distancefood + (8 * distanceghost * distancescared) + -4 * distancecapsule + 1 * distancefriend + -30 * oscil
+        stateEval = 152 * succScore + -9 * distancefood + (8 * distanceghost * distancescared) + -4 * distancecapsule + 2 * distancefriend + -30 * oscil
             
 
         return stateEval

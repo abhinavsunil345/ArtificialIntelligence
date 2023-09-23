@@ -115,7 +115,7 @@ class CaptureAgent(BaseAgent):
 
     def getCapsulesYouAreDefending(self, gameState):
         if (self.red):
-            #print('red')
+            print('red')
             return gameState.getRedCapsules()
         else:
             return gameState.getBlueCapsules()

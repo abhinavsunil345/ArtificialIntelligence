@@ -49,7 +49,7 @@ class ValueIterationAgent(ValueEstimationAgent):
         Returns the policy at the state (no exploration).
         """
         return self.getPolicy(state)
-
+        
     def getQValue(self, state, action):
         q = 0
         for trans, prob in self.mdp.getTransitionStatesAndProbs(state, action):

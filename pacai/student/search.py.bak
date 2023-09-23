@@ -92,6 +92,6 @@ def aStarSearch(problem, heuristic):
                 if x[0] not in visited:
                     frontier.append((x[0], b + [x[1]], d + x[2] + heuristic(x[0], problem),
                     d + x[2]))
-                    frontier = sorted(frontier, key=lambda x: x[2], reverse=True)
+                    frontier = sorted(frontier, key=lambda x: x[2], reverse=True)       
     return []
     # raise NotImplementedError()

@@ -66,7 +66,7 @@ class SearchProblem(abc.ABC):
         Answers the question:
         Where should the search start?
 
-        Returns the starting state for the search problem.
+        Returns the starting state for the search problem.  
         """
     pass
 

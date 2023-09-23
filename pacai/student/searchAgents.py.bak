@@ -257,7 +257,6 @@ class AnyFoodSearchProblem(PositionSearchProblem):
 
         # Store the food for later reference.
         self.food = gameState.getFood()
-
     def isGoal(self, state):
         if (state in self.food.asList()):
             return True

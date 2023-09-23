@@ -37,7 +37,7 @@ def question3b():
 
     answerDiscount = 0.9
     answerNoise = 0.2
-    answerLivingReward = 0.0
+    answerLivingReward = 0
 
     return answerDiscount, answerNoise, answerLivingReward
 

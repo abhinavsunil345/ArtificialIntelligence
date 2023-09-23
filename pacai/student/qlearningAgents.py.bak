@@ -49,7 +49,7 @@ class QLearningAgent(ReinforcementAgent):
         alpha = self.getAlpha()  # Learning rate
         gamma = self.getDiscountRate()  # Discount rate
         if not self.getLegalActions(nextState):
-            maxQ = 0.0
+            maxQ = 0.0 
         else:
             maxQ = max([self.getQValue(nextState, nextAction) for nextAction
             in self.getLegalActions(nextState)])

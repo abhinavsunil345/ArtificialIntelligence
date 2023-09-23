@@ -330,12 +330,12 @@ def betterEvaluationFunction(currentGameState):
     remainingFood = currentGameState.getNumFood()
     for ghostState in currentGameState.getGhostStates():
         ghostPosition = ghostState.getPosition()
-        x = manhattan(newPosition, ghostPosition)
+        distance = manhattan(newPosition, ghostPosition)
         if ghostState.getScaredTimer() > 0:
-            if x < closestscaredghost:
-                closestscaredghost = x
-        elif x < closestghost:
-            closestghost = x
+            if distance < closestscaredghost:
+                closestscaredghost = distance
+        elif distance < closestghost:
+            closestghost = distance
     for food in currentGameState.getFood().asList():
         y = manhattan(newPosition, food)
         if (closestfood > y):
